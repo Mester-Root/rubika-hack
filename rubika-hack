@@ -24,9 +24,9 @@ ___________________________
 __________________________________
          """)
 for bnr in banner:
-        sys.stdout.write(bnr)
-        sys.stdout.flush()
-        time.sleep(0.009)
+    sys.stdout.write(bnr)
+    sys.stdout.flush()
+    time.sleep(0.009)
 #----
 try:
     auth = sys.argv[1]
