@@ -1,10 +1,9 @@
+#!/bin/python
 # rubika-hack
-#------
 # --- importing ---
 import os,time,sys
 from rubika import Bot
 import datetime
-import requests
 #-----
 os.system("clear")
 #----
