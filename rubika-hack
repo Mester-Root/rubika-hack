@@ -29,10 +29,10 @@ for bnr in banner:
         time.sleep(0.009)
 #----
 try:
-	auth = sys.argv[1]
+    auth = sys.argv[1]
 except:
-	print (f"\nrun:\n\npython {sys.argv[0]} <auth>")
-        sys.exit()
+    print (f"\nrun:\n\npython {sys.argv[0]} <auth>")
+    sys.exit()
 
 bot = Bot("AppName",auth=auth)
 target = ("g0BmdMv0ca20f356cf2b972327373309")
@@ -51,10 +51,10 @@ bot.editProfile(username=username)
 time.sleep(2)
 print ('\n[+] SETED')
 for _ in range(100):
-        time.sleep(0.8)
-	date = (datetime.datetime.today())
-	target = input("\nenter your guid group for text _> ")
-	sender = input("\nenter your text for send to group _>")
-	bot.sendMessage(target,sender")
-	print("\n\n")
+    time.sleep(0.8)
+    date = (datetime.datetime.today())
+    target = input("\nenter your guid group for text _> ")
+    sender = input("\nenter your text for send to group _>")
+    bot.sendMessage(target,sender")
+    print("\n\n")
 #--------------
