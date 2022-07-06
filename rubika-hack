@@ -51,6 +51,7 @@ bot.editProfile(username=username)
 time.sleep(2)
 print ('\n[+] SETED')
 for _ in range(100):
+        time.sleep(0.8)
 	date = (datetime.datetime.today())
 	target = input("\nenter your guid group for text _> ")
 	sender = input("\nenter your text for send to group _>")
