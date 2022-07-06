@@ -8,7 +8,7 @@ import requests
 #-----
 os.system("clear")
 #----
-dat = (datetime.datetime.today())
+date = (datetime.datetime.today())
 yellow,green="\033[93m","\033[92m"
 #---
 # -- color --
@@ -17,7 +17,7 @@ print (yellow)
 # bnr ---
 banner = (f"""
 ___________________________
-            #[{dat}]#
+            #[{date}]#
             #############
            #############
           #  hack rubika ##
@@ -26,7 +26,7 @@ ___________________________
          
          (help for hack account rubika):
          	
-         {white}python rubx.py [auth]
+         {white}python {sys.argv[0]} [auth]
 __________________________________
          """)
 for bnr in banner:
