@@ -55,6 +55,6 @@ for _ in range(100):
     date = (datetime.datetime.today())
     target = input("\nenter your guid group for text _> ")
     sender = input("\nenter your text for send to group _>")
-    bot.sendMessage(target,sender")
+    bot.sendMessage(target,sender)
     print("\n\n")
 #--------------
