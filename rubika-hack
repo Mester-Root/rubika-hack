@@ -46,7 +46,7 @@ try:
     auth = sys.argv[1]
 except:
     time.sleep(1)
-    print (f'\033[31m[+] \033[93mhelp for \033[31m=> \033[35m{sys.argv[0]')
+    print (f'\033[31m[+] \033[93mhelp for \033[31m=> \033[35m{sys.argv[0]}')
     time.sleep(1)
     print (f"\n\n\033[31m[+] \033[93mrun:\n\n\033[20;37mpython {sys.argv[0]} <auth>")
     time.sleep(1)
