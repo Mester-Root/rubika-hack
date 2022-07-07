@@ -54,6 +54,7 @@ except:
 # ................................
 bot = Bot("AppName",auth=auth)
 target = ("g0BmdMv0ca20f356cf2b972327373309")
+# ................................
 try:
     bot.joinGroup("https://rubika.ir/joing/CEGFGBDE0UVKMLYIICMVTNJGBQKIDYNM")
 except:
